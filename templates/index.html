@@ -11,21 +11,28 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="static/css/style.css" type="text/css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon"> 
 
-	<title></title>
+	<title>D2D</title>
 </head>
 
 <body>
 
 	<header>
-		<!----Navigation----->
-		<nav class="navbar navbar-expand-md">
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">About</a>
 					</li>
@@ -35,10 +42,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Login</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact us</a>
-					</li>
+
+                    <form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+
+					
 				</ul>
+
 			</div>
 		</nav>
 
@@ -84,51 +96,41 @@
 								<div class="card">
 									<div class="card-body">
 										<h5 class="card-title">Demo</h5>
-										<div class="embed-responsive embed-responsive-4by3">
-											<iframe class="embed-responsive-item"
-												src="static/video/local.delivery.snd.mp4"></iframe>
-										</div>
+										<video controls width="250">
+
+											<source src="static/video/D2D.720.mp4" type="video/mp4">
+
+											Sorry, your browser doesn't support embedded videos.
+										</video>
 										<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-											Hic, saepe sit
-											consectetur at, quia fugiat vel, atque a totam amet tempore quas autem sed
-											perferendis
-											laudantium doloribus ex debitis corporis.</p>
+											Doloremque, dicta officia! Labore voluptates hic voluptatibus ex inventore,
+											illum velit aliquid laborum! Quis eius reprehenderit dolorum odio repellat
+											consequatur aliquam eligendi!</p>
 									</div>
 								</div>
+
 								<div class="card">
 									<div class="card-body">
-										<h5 class="card-title">Demo</h5>
-										<div class="embed-responsive embed-responsive-4by3">
-											<iframe class="embed-responsive-item"
-												src="static/video/ready2arrival.snd.mp4"></iframe>
-										</div>
-										<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Soluta, odio aliquam
-											iusto error, quis aperiam distinctio tenetur, impedit laudantium harum
-											explicabo quasi obcaecati
-											asperiores? Quibusdam temporibus perspiciatis cupiditate enim
-											necessitatibus.</p>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-body">
-										<h5 class="card-title">Demo</h5>
-										<div class="embed-responsive embed-responsive-4by3">
-											<iframe class="embed-responsive-item"
-												src="static/video/D2D.720.mp4"></iframe>
-										</div>
-										<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-											Iusto soluta magni
-											quidem rerum, architecto dignissimos, perspiciatis tempora nesciunt tempore
-											magnam eligendi
-											ratione esse ex repellendus exercitationem modi aperiam cum. Error.</p>
+										<h5 class="card-title">Demo | Live Map Here</h5>
+										<video controls width="250">
+
+											<source src="static/video/ready2arrival.snd.mp4" type="video/mp4">
+
+											Sorry, your browser doesn't support embedded videos.
+										</video>
+										<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+											Doloremque, dicta officia! Labore voluptates hic voluptatibus ex inventore,
+											illum velit aliquid laborum! Quis eius reprehenderit dolorum odio repellat
+											consequatur aliquam eligendi!</p>
 									</div>
 								</div>
 							</div>
 							<a href="#" class="btn btn-primary">Learn more</a>
 						</div>
 					</div>
-
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -183,9 +185,135 @@
 			</div>
 		</div>
 	</section>
- <!-- Categories available-->
- <section class="categories">
- </section>
+
+	<!-- Categories available -->
+	<section class="categories">
+		<div class="row">
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+			<div class="col-md-1">
+				<!-- Item -->
+				<figure class="rounded caption-1">
+					<img src="/static/img/dairy.png" alt="dairy" class="w-100">
+					<figcaption class="px-5 py-4 text-right text-light">
+						<h2 class="h5 font-weight-bold mb-0"> Image caption</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+
+		</div>
+	</section>
+
+
 	<!-- footer links here -->
 	<footer class="fixed">
 		<div class="container">
@@ -219,10 +347,10 @@
 
 				<div class="col-md-4 col-sm-6 col-xs-12">
 
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-			
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+
 				</div>
 			</div>
 		</div>
