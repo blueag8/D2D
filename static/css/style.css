@@ -4,7 +4,6 @@ body {
 
 /* img and logo */
 header{
-    height: 60vh;
 	background-image:url("img/banner1.png");
 	background-repeat: no-repeat;
 	background-position: center;
